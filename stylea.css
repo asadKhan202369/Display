@@ -1,0 +1,559 @@
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Medium.ttf");
+    font-weight: 500;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Medium.ttf");
+    font-weight: 600;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Medium.ttf");
+    font-weight: 700;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Medium.ttf");
+    font-weight: 800;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Medium.ttf");
+    font-weight: 900;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Regular.ttf");
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Regular.ttf");
+    font-weight: 300;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Regular.ttf");
+    font-weight: 200;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Regular.ttf");
+    font-weight: 100;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./fonts/FHGiselle-Regular.ttf");
+    font-weight:  600;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./fonts/FHGiselle-Regular.ttf");
+    font-weight:  500;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./fonts/FHGiselle-Regular.ttf");
+    font-weight:  400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#mobilenav{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    transform: translate(100%);
+    position: fixed;
+    z-index: 9999999999;
+    padding: 0 4vw;
+    width: 100%;
+    height: 100%;
+    background-color:#8383db;
+}
+#mobilenav a{
+    text-decoration: none;
+    color: #fff;
+}
+#mnav{
+    width: 100%;
+    height: 20vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#mnav img{
+    height: 50%;
+}
+#mnav i{
+    font-size: 15vw;
+    color: #fff;
+}
+#mobilenav .rows{
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content:space-around;
+    padding-bottom: 10vw;
+    width: 100%;
+    height: 80vh;
+}
+#mobilenav .r{
+    width: 100%;
+}
+#mobilenav #blogo{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+#mobilenav #blogo h5{
+    text-transform: capitalize;
+    font-family: "FH Giselle";
+    font-size: 8vw;
+    color: #fff;
+}
+#mobilenav #blogo img{
+    height:7vh;
+}
+#mobilenav .row h5{
+    text-transform: uppercase;
+    font-family: "FH Giselle";
+    font-size: 8vw;
+}
+#mobilenav .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+#resources{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 0vw;
+    padding-bottom: 7vw;
+    position: fixed;
+    right: 20%;
+    width: 0%;
+    bottom: 0;
+    height: 100%;
+    background-color: #fe677d;
+    z-index: 9999999999999;
+    overflow: hidden;
+}
+#resources h1{
+    font-size: 3vw;
+    font-family: "FH Giselle";
+     text-transform: capitalize;
+     color: #fff;
+     font-weight: 500;
+     transform: translateY(200%);
+}
+#resources #h1{
+    overflow: hidden;
+    transform: rotate(-90deg);
+}
+#resources img{
+    scale:0;
+}
+#works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 0vw;
+    padding-bottom: 5vw;
+    position: fixed;
+    right: 10%;
+    width: 10%;
+    bottom: 0;
+    height: 100%;
+    background-color:  #ff9776;
+    z-index: 99999999999999;
+}
+#works img{
+    scale:0;
+}
+#works h1{
+    font-size: 3vw;
+    font-family: "FH Giselle";
+     text-transform: capitalize;
+     color: #fff;
+     font-weight: 500;
+     transform: translateY(200%);     
+}
+#works #h1{
+    transform: rotate(-90deg);
+     overflow: hidden;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 0vw;
+    padding-bottom: 5vw;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    height: 100%;
+    background-color:#8383db;
+    z-index: 99999999999999;
+}
+#works2{
+    width: 82%;
+}
+#main{
+    position: relative;
+    display: flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+    width: 100%;
+    overflow: hidden;
+    background-color: #faf6ef;
+}
+
+#part1{
+    width: 100%;
+    height: 100vh;
+}
+#nav{
+    padding: 5vw 5vw;
+    padding-right: 8vw;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    position: relative;
+    z-index: 9999999999;
+}
+#nav #logo{
+    align-items: center;
+    transform: translateY(-220%);
+    gap: 8vw;
+    display: flex;
+}
+#nav #logo #picture{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+#nav #logo h1{
+    font-family: "FH Giselle";
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.t3m{
+    width: fit-content;
+    position: relative;
+    margin-bottom: .5vw;
+    overflow: hidden;
+}
+.line{
+    position: absolute;
+    width: 0%;
+    height: 2px;
+     background-color: #000;
+    bottom: 0;
+}
+#nav #right #cnt{
+    display: flex;
+    transform: translateY(-210%);
+    align-items: center;
+    gap: 1vw;
+    padding: .9vw 1.5vw;
+    background-color:#ff9776;
+    border-radius: 2vw;
+}
+#nav #right #cnt img{
+   width: 27px;
+   height: 20px;
+   transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#nav #mobile-button{
+    transform: translateY(-700%);
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+    display: none;
+}
+#nav #mobile-button .mline{
+    width: 35px;
+    height: 3px;
+    background-color: rgb(92, 91, 91);
+}
+#nav #right #cnt h3{
+    font-family:roobert;
+    font-weight:  500;
+    font-size: 1vw;
+    color: #fff;
+    text-transform: capitalize;
+ }
+ #nav #logo p{
+    text-transform: uppercase;
+    font-family:roobert;
+    font-size: 10px;
+    color: #b1aca8; 
+}
+#text{
+    padding: 0 5vw;
+    margin-top: 1vw;
+}
+#text img{
+    transform: translateY(200%);
+}
+#text h1{
+    font-family: "FH Giselle";
+    font-size: 11vw;
+    color: #454545;
+    font-weight: 500;
+    text-transform: capitalize;
+    transform: translateY(100%);
+}
+#text h1 span{
+    text-transform: lowercase;
+    color: #fe9676;
+    font-size: 4vw;
+    font-style: italic;
+}
+#text #t1{
+    display: flex;
+    align-items: flex-end;
+    height: fit-content;
+    overflow: hidden;
+}
+#text #t2{
+    margin-top: 1vw;
+    margin-left: 8vw;
+    display: flex;
+    overflow: hidden;
+    gap: 1vw;
+    align-items: center;
+    height: fit-content;
+}
+#text #t2 h1{
+    margin-top: -2.5vw;
+}
+.para p{
+    opacity: 0;
+    transform: translateY(300%);
+    width: 25%;
+    text-align: left;
+    font-family:roobert;
+    color:#bcb9b4;
+   font-weight: 500;
+   margin-left: 25vw;
+}
+.para img{
+    transform: translateY(300%);   
+}
+.para{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 4vw;
+    padding-right: 5vw;
+}
+.ptext{
+    padding: 0 5vw;
+    width: 100%;
+    margin-top: 10vw;
+}
+.ptext .picture{
+    width: 50%;
+    height: 70vh;
+}
+.ptext .picture .l{
+    width: 5px;
+    height: 100%;
+    background-color:#d9d9d9;
+}
+.picture .img{
+   width: 100%;
+   height: 70%;
+   overflow: hidden;
+
+}
+.picture .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+.picture:hover img{
+    height: 110%;
+    height: 110%;
+}
+#part2 .ptext{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: initial;
+}
+#part3 .ptext{
+    display: flex;
+    gap: 7vw;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: initial;
+}
+.picture .text{
+    display: flex;
+    gap: 1.2vw;
+    width: 100%;
+    height: 30%;
+    padding: 1vw 0;
+ }
+ .picture .text h5{
+    text-transform: capitalize;
+    font-family:roobert;
+    color: #c0c1c6;
+    font-size: 1vw;
+    font-weight: 500;
+ }
+ .picture .text h4{
+    text-transform: capitalize;
+    font-family:roobert;
+    color: #000;
+    font-size: 1.3vw;
+    font-weight: 500;
+    width: 70%;
+    margin: .7vw 0;
+ }
+ .picture .text p{
+    text-transform: capitalize;
+    font-family: gilroy;
+    color: #aeaca8;
+    font-size: 1.1vw;
+    font-weight: 300;
+ }
+#part2{
+    width: 100%;
+    height: 100vh;
+}
+
+#part3{
+    position: relative;
+    z-index: 9999999;
+    margin-bottom: -5vw;
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f4ef;
+}
+#part4{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    display: flex;
+    position: relative;
+    z-index: 9;
+    margin-top: -5vw;
+    width: 100%;
+    height: 100vh;
+    background-color: #644162;
+}
+#part4 #section1{
+    width: 50%;
+    height: 100%;
+    background:red;
+}
+#part4 #section1{
+    width: 50%;
+    height: 100%;
+    /* background:yellow; */
+}
+
+@media (max-width:600px){
+    #resources{
+       display: none;
+    }
+    #works{
+       display: none;
+    }
+    #about{
+       display: none;
+    }
+    #works2{
+       width: 100%;
+    }
+    #nav #right{
+       display: none;
+    }
+    #nav #logo p{
+       display: none;
+    }
+    #nav #mobile-button{
+       display: flex;
+       gap: 1.5vw;
+    }
+    #part1>#text{
+        margin-top: 20vw;
+        display: flex;
+       flex-direction: column;
+    }
+    #text #t2{
+       flex-direction: column;
+       align-items: flex-start;
+   }
+   #text #t2 p{
+       width: 60%;
+       margin-top: 7vw
+   }
+   #text #t1{
+    padding: 0 5vw;
+   }
+   #text #t2{
+    padding: 0 5vw;
+   }
+   #text h1{
+       font-size: 13vw;
+   }
+   #text #t2 img{
+       display: initial;
+       width: 75px;
+       height: 75px;
+       margin-top: 8vw;
+       margin-left: 7vw;
+   }
+   .para img{
+    display: none;
+   }
+   #text #t2 img{
+    display: none;
+   }
+   #text h1{
+    font-size:19vw;
+   }
+   #text h1 span{
+    font-size: 8vw;
+   }
+   #text #t2 h1{
+    text-align: center;
+    margin-right: 20vw;
+   }
+   .para p{
+    width: 80%;
+    margin-top: 5vw;
+    font-size: 5vw;
+    margin-left:8vw;
+   }
+    
+       
+}

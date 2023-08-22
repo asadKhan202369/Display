@@ -1,0 +1,736 @@
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Medium.ttf");
+    font-weight: 500;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Medium.ttf");
+    font-weight: 600;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Medium.ttf");
+    font-weight: 700;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Medium.ttf");
+    font-weight: 800;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Medium.ttf");
+    font-weight: 900;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Regular.ttf");
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Regular.ttf");
+    font-weight: 300;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Regular.ttf");
+    font-weight: 200;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./fonts/Roobert-Regular.ttf");
+    font-weight: 100;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./fonts/FHGiselle-Regular.ttf");
+    font-weight:  600;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./fonts/FHGiselle-Regular.ttf");
+    font-weight:  500;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./fonts/FHGiselle-Regular.ttf");
+    font-weight:  400;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#mobilenav{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    transform: translate(100%);
+    position: fixed;
+    z-index: 9999999999;
+    padding: 0 4vw;
+    width: 100%;
+    height: 100%;
+    background-color:#fe677d;
+}
+#mobilenav a{
+    text-decoration: none;
+    color: #fff;
+}
+#mnav{
+    width: 100%;
+    height: 20vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#mnav img{
+    height: 50%;
+}
+#mnav i{
+    font-size: 15vw;
+    color: #fff;
+}
+#mobilenav .rows{
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content:space-around;
+    padding-bottom: 10vw;
+    width: 100%;
+    height: 80vh;
+}
+#mobilenav .r{
+    width: 100%;
+}
+#mobilenav #blogo{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+#mobilenav #blogo h5{
+    text-transform: capitalize;
+    font-family: "FH Giselle";
+    font-size: 8vw;
+    color: #fff;
+}
+#mobilenav #blogo img{
+    height:7vh;
+}
+#mobilenav .row h5{
+    text-transform: uppercase;
+    font-family: "FH Giselle";
+    font-size: 8vw;
+}
+#mobilenav .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+#works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 0vw;
+    padding-bottom: 5vw;
+    position: fixed;
+    right: 10%;
+    width: 10%;
+    bottom: 0;
+    height: 100%;
+    background-color:  #ff9776;
+    z-index: 99999999999999;
+}
+#works img{
+    scale: 0;
+}
+#works h1{
+    font-size: 3vw;
+    font-family: "FH Giselle";
+     text-transform: capitalize;
+     color: #fff;
+     font-weight: 500;     
+}
+#works #h1{
+    transform: rotate(-90deg);
+     overflow: hidden;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 0vw;
+    padding-bottom: 5vw;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    height: 100%;
+    background-color:#8383db;
+    z-index: 99999999999999;
+}
+#about img{
+    scale: 0;
+}
+#about h1{
+    font-size: 3vw;
+    font-family: "FH Giselle";
+     text-transform: capitalize;
+     color: #fff;
+     font-weight: 500;
+}
+#about #h1{
+    overflow: hidden;
+    transform: rotate(-90deg);
+}
+
+
+#main{
+    position: relative;
+    width: 100%;
+    /* padding-bottom: 100vh; */
+    margin-bottom: 100vh;
+    /* pointer-events: none; */
+    /* background-color:red; */
+}
+#works2{
+    width: 82%;
+    /* margin-bottom: 100vw; */
+    /* padding-bottom: 100vh; */
+    /* pointer-events: none; */
+
+}
+#part1{
+    width: 100%;
+    height: 180vh;
+    background-color: #f9f4ef;
+}
+#nav{
+    padding: 5vw 5vw;
+    padding-right: 8vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    position: relative;
+    z-index: 999;
+
+}
+#nav .line{
+    background-color: #000;
+    
+}
+#nav img{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+}
+#nav #picture:hover img{
+    transform: rotate(45deg);
+}
+#nav #logo{
+    align-items: center;
+    transform: translateY(-220%);
+    gap: 8vw;
+    display: flex;
+}
+#nav #logo #picture{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+#nav #logo h1{
+    font-family: "FH Giselle";
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#nav #right #cnt{
+    display: flex;
+    transform: translateY(-210%);
+    align-items: center;
+    gap: 1.5vw;
+    padding: .9vw 1.5vw;
+    background-color:#ff9776;
+    border-radius: 2vw;
+}
+#nav #right #cnt img{
+   width: 27px;
+   height: 20px;
+   transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#nav #right #cnt h3{
+    font-family:roobert;
+    font-weight:  500;
+    font-size: 1vw;
+    color: #fff;
+    text-transform: capitalize;
+ }
+ #nav #cnt:hover img{
+    transform: translateX(40%);
+ }
+ #nav #logo p{
+    text-transform: uppercase;
+    font-family:roobert;
+    font-size: 10px;
+    color: #b1aca8; 
+}
+#nav #mobile-button{
+    transform: translateY(-700%);
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+    display: none;
+}
+#nav #mobile-button .mline{
+    width: 35px;
+    height: 3px;
+    background-color: rgb(92, 91, 91);
+}
+#part1>#text{
+    padding: 0 5vw;
+    margin-top: 1vw;
+}
+#text h1{
+    font-family: "FH Giselle";
+    font-size: 9vw;
+    color: #454545;
+    font-weight: 500;
+    text-transform: capitalize;
+    transform: translateY(100%);
+}
+#text #t1{
+    display: flex;
+    align-items: flex-end;
+    height: fit-content;
+    overflow: hidden;
+}
+#text #t2{
+    padding-right: 2vw;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+}
+#text #t2 #t2e1{
+    overflow: hidden;
+}
+#text #t2 #p{
+    overflow: hidden;
+}
+#text #t2 img{
+    display: none;
+    opacity: 0;
+}
+#text #t2 h1{
+    margin-top: -2.5vw;
+}
+#text #t2 p{
+    transform: translateY(150%);
+    opacity: 0;
+    width: 25%;
+    text-align: left;
+    font-family:roobert;
+    color:#bcb9b4;
+   font-weight: 500;
+}
+.ptext{
+    opacity: 0;
+    padding: 0 5vw;
+    width: 100%;
+    margin-top: 10vw;;
+}
+.ptext .picture{
+    width: 50%;
+    height: 70vh;
+}
+.ptext .picture .l{
+    width: 5px;
+    height: 100%;
+    background-color:#d9d9d9 ;
+}
+.picture .img{
+   width: 100%;
+   height: 70%;
+   overflow: hidden;
+
+}
+.picture .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+.picture:hover img{
+    height: 110%;
+    height: 110%;
+}
+#part2 .ptext{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: initial;
+}
+#part3 .ptext{
+    display: flex;
+    gap: 7vw;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: initial;
+}
+.picture .text{
+    display: flex;
+    gap: 1.2vw;
+    width: 100%;
+    height: 30%;
+    padding: 1vw 0;
+ }
+ .picture .text h5{
+    text-transform: capitalize;
+    font-family:roobert;
+    color: #c0c1c6;
+    font-size: 1vw;
+    font-weight: 500;
+ }
+ .picture .text h4{
+    text-transform: capitalize;
+    font-family:roobert;
+    color: #000;
+    font-size: 1.3vw;
+    font-weight: 500;
+    width: 70%;
+    margin: .7vw 0;
+ }
+ .picture .text p{
+    text-transform: capitalize;
+    font-family:roobert;
+    color: #aeaca8;
+    font-size: 1.1vw;
+    font-weight: 300;
+ }
+#part2{
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f4ef;
+
+}
+#part3{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f4ef;
+}
+#overlay{
+    pointer-events: none;
+    width: 100%;
+    height: 80vh;
+    background-color: transparent;
+}
+#part4{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: -2;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    background-color: #644162;
+}
+#p4{
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+ 
+#part4 #section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+}
+#part4 #section1 #h1s h1{
+    color: #fff;
+    font-family: "FH Giselle";
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 1;
+
+}
+#part4 #section1 #mail{
+    padding-left: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    height: 10%;
+    border-radius: 2vw;
+    border: 1px solid #fff;
+
+}
+#part4 #section1 #mail #circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#part4 #section1 #mail h6{
+    color: #fff;
+    text-transform: capitalize;
+    font-family:roobert;
+    font-size: 1vw;
+    font-weight: 500;
+}
+#part4 #section1 #picture{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+#part4 #section1 #picture  h3{
+    font-family: "FH Giselle";
+    font-size: 2vw;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 500;
+}
+#part4 #section2{
+    padding: 0 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+}
+#section2>img{
+    display: none;
+}
+#section2 #social{
+    display: flex;
+    gap: 1.5vw;
+}
+#section2 #text{
+    display: flex;
+    align-items: flex-start;
+    color: #fff;
+    font-family:roobert;
+}
+#section2 #text h6{
+    color:#a698a9;
+    font-size: 1vw;
+    font-weight: 500;
+}
+#section2 #text1 h6{
+    font-size: 1vw;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+#section2 .text{
+    display: flex;
+    gap: 4vw;
+}
+.t1m{
+    gap: 1.5vw;
+    display: flex;
+    flex-direction: column;
+}
+.t1m h5{
+    color:#897ea0;
+    text-transform: uppercase;
+    font-family:roobert;
+    font-weight: 500;
+    font-size: .8vw;
+}
+.t3m{
+    width: fit-content;
+    position: relative;
+    margin-bottom: .5vw;
+    overflow: hidden;
+}
+.t3m h6{
+    color: #fff;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+    font-family:roobert;
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+.line{
+    position: absolute;
+    width: 0%;
+    height: 2px;
+     background-color: #fff;
+    bottom: 0;
+}
+#part4 #social img{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+}
+#part4 #social img:hover{
+     transform: rotate(30deg);
+}
+#part4 #section1 #picture h3{
+    margin-bottom:5px;
+}
+
+@media (max-width:600px){
+     #resources{
+        display: none;
+     }
+     #works{
+        display: none;
+     }
+     #about{
+        display: none;
+     }
+     #works2{
+        width: 100%;
+     }
+     #nav #right{
+        display: none;
+     }
+     #nav #logo p{
+        display: none;
+     }
+     #nav #mobile-button{
+        display: flex;
+        gap: 1.5vw;
+     }
+     #main{
+        overflow: hidden;
+     }
+     #part1{
+        background-color: #fff;
+     }
+     #part1>#text{
+         display: flex;
+        flex-direction: column;
+        padding: 0 10vw;
+     }
+     #part2{
+        background-color: #fff;
+     }
+     #text #t2{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text #t2 p{
+        width: 60%;
+        margin-top: 7vw
+    }
+    #text h1{
+        font-size: 17vw;
+    }
+    #text #t2 img{
+        display: initial;
+        width: 75px;
+        height: 75px;
+        margin-top: 8vw;
+    }
+    .ptext .picture{
+        width: 100%;
+    }
+    .ptext .picture .l{
+        display: none;
+    }
+    .picture .text h5{
+        font-size: 5vw;
+    }
+    .picture .text h4{
+        font-size: 6vw;
+        width: 90%;
+        margin-bottom: 2vw;
+        margin-top: 2vw
+    }
+    .picture .text p{
+        font-size: 4vw;
+        width: 90%;
+    }
+    #part2{
+        height: 80vh;
+    }
+    #part3{
+        height: 160vh;
+        background-color: #fff;
+    }
+    #part1{
+        height: 140vh;
+    }
+    #part3 .ptext{
+        flex-direction: column;
+    }
+    #part4{
+        margin: initial;
+        width: 100%;
+    }
+    #p4{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    #part4 #section1{
+        padding-left: 5vw;
+        width: 100%;
+       background-color: #fe677d;
+       border-bottom-right-radius: 15vw;
+         
+    }
+    #part4 #section1 #h1s h1{
+        font-size: 12vw;
+    }
+    #part4 #section1 #mail{
+        padding-left: 7vw;
+           width: 45%;
+           height: 14%;
+           border-radius: 10vw;
+    }
+    #part4 #section1 #mail h6{
+        font-size: 3vw;
+    }
+    #part4 #section1 #picture h3{
+        font-size: 4vw;
+    }
+    .t1m{
+        gap: 5vw;
+    }
+    .t1m h5{
+        font-size: 3vw;
+    }
+    .t3m h6 {
+        font-size: 4vw;
+    }
+    #section2 .text {
+        gap: 15vw;
+    }
+    #part4 #section2{
+        width: 100%;
+        position: relative;
+
+    }
+    #section2>img{
+        display: initial;
+        position: absolute;
+        bottom: 5%;
+        right: 7%;
+    }
+    #section2 #text h6{
+        font-size: 3vw;
+    }
+}
